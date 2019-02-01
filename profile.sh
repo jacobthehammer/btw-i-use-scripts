@@ -22,6 +22,3 @@ echo -n  "This system has been running for"
 uptime -p | cut -c 3-99
 
 echo ""
-
-echo "SSH Keys will be required starting 02/14/2019 More info: https://www.ssh.com/ssh/key/"
-echo "Proxies must be enabled for all domains pointing to this server"
