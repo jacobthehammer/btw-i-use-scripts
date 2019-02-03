@@ -1,4 +1,6 @@
 #!/bin/bash
+# We use single quotes here so it's interpreted as a string literal
+# Get ASCII word art: http://patorjk.com/software/taag/#p=display&f=Slant&t=btw%2C%20i%20use%20arch
 echo '    __    __                _                                       __  ';
 echo '   / /_  / /__      __     (_)  __  __________     ____ ___________/ /_ ';
 echo '  / __ \/ __/ | /| / /    / /  / / / / ___/ _ \   / __ `/ ___/ ___/ __ \';
@@ -9,6 +11,7 @@ echo '                   |/                                                   ';
 uid=$(whoami | id -u)
 echo -n "Welcome back, "
 fgrep "$uid" /etc/passwd | awk -F: '{ print $5}'
+
 echo -n "Current hostname: "
 hostname
 echo ""
